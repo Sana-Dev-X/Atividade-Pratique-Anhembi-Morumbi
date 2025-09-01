@@ -23,6 +23,7 @@ public class TelaPrincipal {
                 System.out.println(tela);
                 Scanner scan = new Scanner(System.in);
                 opcao = scan.nextLine();
+                
                     switch (opcao) {
                         case "1":
                             this.login();

@@ -18,6 +18,7 @@ public class TelaLogin {
 
         Scanner scan = new Scanner(System.in);
         String usuario = scan.nextLine();
+        
         System.out.println("Usuário digitado: " + usuario);
         
         tela = 
@@ -28,6 +29,7 @@ public class TelaLogin {
 
         String senha = scan.nextLine();
 
+        
         LoginService loginService = new LoginService();
 
         if(loginService.validarLogin(usuario, senha)){
@@ -37,7 +39,6 @@ public class TelaLogin {
         } else {
             System.out.println("Usuário ou senha inválidos! Tente novamente.");
         }
-    
     }
 
 }
