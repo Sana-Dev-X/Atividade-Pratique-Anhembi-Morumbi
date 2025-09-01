@@ -14,7 +14,7 @@ public class LoginService {
     
         Map<String, String> usuarios = new HashMap<>();
 
-        String arquivo = System.getProperty("user.dir") + File.separator + "AgendaCultural" + File.separator + "usuarios.data"; // Caminho absoluto
+        String arquivo = System.getProperty("user.dir") + File.separator +  "usuarios.data"; // Caminho absoluto
         try {
             usuarios = (Map<String, String>) UsuarioService.deserializar(arquivo);
         } catch (Exception e) {

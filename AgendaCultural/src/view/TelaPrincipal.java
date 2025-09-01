@@ -8,16 +8,15 @@ public class TelaPrincipal {
         
         if(b){
             System.out.println("AGENDA CULTURAL");
-            String tela = """
-            ========================================
-            Bem vindo ao sistema de Agenda Cultural!
-            ========================================
-            Digite a opção desejada:
-            1 - Login
-            2 - Cadastrar
-            3 - Sair
-            ======================================
-                    """;
+            String tela = 
+                "========================================\n" +
+                "Bem vindo ao sistema de Agenda Cultural!\n" +
+                "========================================\n" +
+                "Digite a opção desejada:\n" +
+                "1 - Login\n" +
+                "2 - Cadastrar\n" +
+                "3 - Sair\n" +
+                "=====================================\n";
             //Captura a opção do usuario e valida no switch        
             String opcao = "";
             while(!opcao.equals("3")){

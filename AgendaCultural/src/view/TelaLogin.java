@@ -8,27 +8,26 @@ public class TelaLogin {
 
     public void setVisible(boolean b) {
         
-        String tela = """
-        ========================================
-        Login
-        ========================================
-        Usuário:
-        ========================================
-                """;
+        String tela = 
+            "========================================\n" +
+            "Login\n" +
+            "========================================\n" +
+            "Usuário:\n" +
+            "========================================\n";
         System.out.println(tela);
 
         Scanner scan = new Scanner(System.in);
         String usuario = scan.nextLine();
         System.out.println("Usuário digitado: " + usuario);
         
-        tela = """
-        ========================================
-        Senha:
-        ========================================
-                """;
+        tela = 
+            "========================================\n" +
+            "Senha:\n" +
+            "========================================\n";
         System.out.println(tela);
+
         String senha = scan.nextLine();
-        
+
         LoginService loginService = new LoginService();
 
         if(loginService.validarLogin(usuario, senha)){
