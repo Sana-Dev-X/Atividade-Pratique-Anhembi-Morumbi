@@ -1,15 +1,16 @@
 package model;
 
 import java.util.Date;
+import model.Categorias;
 
-public class evento {
+public class Evento {
 
     long id;
     String nome;
     Date data;
     String local;
     String descricao;
-    categorias categoria;
+    Categorias categoria;
     public long getId() {
         return id;
     }
@@ -40,10 +41,10 @@ public class evento {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-    public categorias getCategoria() {
+    public Categorias getCategoria() {
         return categoria;
     }
-    public void setCategoria(categorias categoria) {
+    public void setCategoria(Categorias categoria) {
         this.categoria = categoria;
     }
 

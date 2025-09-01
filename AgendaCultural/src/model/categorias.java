@@ -1,6 +1,6 @@
 package model;
 
-public enum categorias {
+public enum Categorias {
 
     FESTAS, EVENTOS_ESPORTIVOS, SHOWS, TEATRO, CINEMA, EXPOSICOES;
 
